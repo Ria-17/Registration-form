@@ -14,7 +14,7 @@ if(ValidateEmail(uemail))
 {
 if(validphone(phone))
 {
-if(alphanumeric(uadd))
+if(validateadd(uadd))
 { 
 if(validateDOB(udob)) 
 {         
@@ -69,7 +69,7 @@ function validphone(phone){
     return true;
 };
 
-function alphanumeric(uadd)
+function validateadd(uadd)
 { 
     var letters = /^[0-9a-zA-Z]+$/;
     if(uadd.value.match(letters))
