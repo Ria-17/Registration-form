@@ -71,16 +71,16 @@ function validphone(phone){
 
 function validateadd(uadd)
 { 
-    var letters = /^[0-9a-zA-Z]+$/;
-    if(uadd.value.match(letters))
+    //var letters = /^[0-9a-zA-Z]+$/;
+    if(uadd.value == null || uadd.value == " ")
     {
-       return true;
+      alert('User address should not be blank');
+      uadd.focus();
+      return false;
     }
     else
     {
-      alert('User address must have alphanumeric characters only');
-      uadd.focus();
-      return false;
+      return true;
     }
 };
 
