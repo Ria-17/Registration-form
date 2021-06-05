@@ -32,7 +32,7 @@ return false;
 
 function allLetter(uname)
 { 
-    var letters = /^[A-Za-z]+$/;
+    var letters = /^[a-zA-Z]+ [a-zA-Z]+$/;
     if(uname.value.match(letters))
     {
        return true;
